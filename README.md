@@ -1,6 +1,6 @@
 # custom_utilities
 
-```
+```python
 ### import packages
  
 import psycopg2
