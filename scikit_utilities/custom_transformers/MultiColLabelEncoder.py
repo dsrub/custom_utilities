@@ -2,6 +2,17 @@ from sklearn.base import TransformerMixin, BaseEstimator, ClassifierMixin
 import numpy as np
 
 class MultiColLabelEncoder(BaseEstimator, TransformerMixin):
+    """ Perform a label encoder on multiple columns
+
+    Parameters
+    ------------
+    grouping_cols : list
+    A list of the columns to encode.  Default is None, which results in encoding all columns
+
+
+    Author : Douglas Rubin
+
+    """
     def __init__(self, columns=None):
 
         # if columns=None, then fit/transform all the columns.  otherwise if a list is specified

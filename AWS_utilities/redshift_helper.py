@@ -2,6 +2,12 @@ import psycopg2
 import pandas as pd
 import re
 
+
+# Author:
+# Douglas Rubin
+
+
+
 def redshift_connect(dbname, host, port, user, pswd):
 
 	"""
@@ -9,6 +15,7 @@ def redshift_connect(dbname, host, port, user, pswd):
 	
 	Inputs: all strings to connect to the redshift database
 	Output: a tuple the cursor for the connection and the connection object
+
 	"""
 
 	con=psycopg2.connect(dbname = dbname, host = host, 

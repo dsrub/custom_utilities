@@ -13,6 +13,10 @@ class S3_helper(object):
 	AWS_SECRET_ACCESS_KEY : str
 		AWS secret access key
 
+	Author
+	------
+	Douglas Rubin
+
 
 	"""
 	def __init__(self, AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY):
